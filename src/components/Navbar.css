@@ -1,23 +1,22 @@
 .navbar {
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-  }
-  
+  background: #5d85a2; /* Light blue background color */
+  color: #333; /* Darker text color for contrast */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #333; /* Change link color to match the new theme */
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+}

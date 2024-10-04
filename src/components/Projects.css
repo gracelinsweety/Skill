@@ -1,0 +1,87 @@
+/* Container styling for the Projects section */
+.projects-container {
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+/* Title for the Projects section */
+.projects-title {
+  color: #0d47a1; /* Darker blue for title */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+/* Grid layout for the project cards */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Individual project card styling */
+.project-card {
+  background: #fff; /* White background for the cards */
+  padding: 1.5rem;
+  width: 250px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Title for each project */
+.project-title {
+  font-size: 1.3rem;
+  color: #0d47a1; /* Darker blue for project title */
+  margin-bottom: 0.5rem;
+}
+
+/* Description text for each project */
+.project-description {
+  font-size: 1rem;
+  color: #555; /* Darker gray for description */
+  margin-bottom: 1rem;
+}
+
+/* Link styling for "View Project" */
+.project-link {
+  display: inline-flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center vertically */
+  text-decoration: none;
+  color: #0d47a1; /* Darker blue for link */
+  font-weight: bold;
+  border: 1px solid #0d47a1;
+  padding: 0.5rem; /* Adjust padding to fit the height */
+  min-width: 150px; /* Minimum width to maintain uniformity */
+  height: 40px; /* Fixed height for uniformity */
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Hover effect for the project link */
+.project-link:hover {
+  background: #0d47a1;
+  color: #fff; /* Inverse color on hover */
+}
+
+/* Styling for project images */
+.project-image {
+  width: 100%; /* Set width to fill the card */
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensure the image covers the area */
+  border: 4px solid #0d47a1; /* Blue frame around the image */
+  border-radius: 8px; /* Rounded corners for the frame */
+  margin-bottom: 10px; /* Space below the image */
+}

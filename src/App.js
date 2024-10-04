@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Project";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import SamplePage from './components/SamplePage';
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -15,7 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/Projects" element={<Projects />} />
+          <Route path="/sample" element={<SamplePage />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

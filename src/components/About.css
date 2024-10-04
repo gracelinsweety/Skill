@@ -1,9 +1,38 @@
 .about {
-    padding: 2rem;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about h2 {
+  color: #0d47a1; /* Darker blue color for heading */
+  margin-bottom: 1.5rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 200px; /* Set the width of the image */
+  height: 200px; /* Set the height of the image */
+  border-radius: 50%; /* Make the image oval */
+  border: 5px solid #0d47a1; /* Add a border to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+
   
