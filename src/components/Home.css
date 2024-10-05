@@ -1,12 +1,66 @@
+/* Home.css */
+
+/* Full-screen container with solid background color */
 .home {
-  padding: 2rem;
-  text-align: center;
-  background-color: #e3f2fd; /* Light blue background color */
-  border-radius: 10px; /* Rounded corners for a softer look */
+  height: 100vh;
+  background-color: #e3f2fd; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #0d47a1; /* Darker blue color for the heading */
+/* Main container for the framed content */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white; /* White background for contrast */
+  border: 3px solid #90caf9; /* Light blue border */
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
+/* Text frame styling */
+.text-frame {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Welcome message */
+.welcome-message {
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif; /* Professional font style */
+  color: #1565c0; /* Dark blue */
+  margin-bottom: 15px;
+  border-bottom: 3px solid #64b5f6; /* Blue underline */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.2em;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+/* Explore button */
+.explore-button {
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0d47a1; /* Darker blue on hover */
+}
+
+

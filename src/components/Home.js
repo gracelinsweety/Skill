@@ -1,13 +1,20 @@
 import React from "react";
 import "./Home.css";
 
-function Home() {
+const Home = () => {
+  const message = "Hello! Welcome to my portfolio"; // Full message to display
+
   return (
     <div className="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm a passionate developer with a knack for building web applications.</p>
+      <div className="home-container">
+        <div className="text-frame">
+          <h1 className="welcome-message">{message}</h1>
+          <p className="subtitle">I am a passionate web developer crafting beautiful and interactive web applications.</p>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Home;
+

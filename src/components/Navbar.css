@@ -1,22 +1,134 @@
+/* Navbar Styles */
 .navbar {
-  background: #5d85a2; /* Light blue background color */
-  color: #333; /* Darker text color for contrast */
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-links a {
-  color: #333; /* Change link color to match the new theme */
-  text-decoration: none;
+  align-items: center;
+  background: #67b5e3;
+  padding: 10px 20px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover Effect for Links */
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Icon Styles */
+.nav-icon {
+  margin-right: 8px; /* Space between icon and text */
+  transition: font-size 0.3s ease; /* Smooth size transition */
+}
+
+/* Blue Shade for Icons */
+.icon-blue {
+  color: #5f80a3; /* Blue color for icons */
+}
+
+/* Hover Effect for Icons */
+.icon-blue:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Menu Icon Styles */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Navbar Styles for Screen Sizes Below 768px */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    height: 100vh;
+    width: 200px;
+    background-color: #67b5e3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .nav-links li {
+    margin: 20px 0; /* Space between menu items */
+  }
+
+  .nav-links a {
+    font-size: 1.4em; /* Larger text for mobile screens */
+  }
+
+  .nav-icon {
+    font-size: 1.6em; /* Increase icon size for larger mobile menu */
+  }
+
+  .nav-links.open {
+    right: 0; /* Show the menu */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .logo {
+    font-size: 1.6em; /* Slightly smaller logo for mobile */
+  }
+}
+
+/* Responsive Styles for Screen Sizes Below 480px */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.4em; /* Smaller logo size for very small screens */
+  }
+
+  .nav-links a {
+    font-size: 1.2em; /* Slightly smaller font size */
+  }
+
+  .nav-icon {
+    font-size: 1.4em; /* Adjust icon size for very small screens */
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-icon {
+    font-size: 24px; /* Slightly smaller menu icon */
+  }
+}
+
+/* General Styles for Desktop and Larger Screens */
+@media screen and (min-width: 1024px) {
+  .nav-icon {
+    font-size: 1.2em; /* Standard icon size for larger screens */
+  }
+
+  .logo {
+    font-size: 2em; /* Larger logo for wide screens */
+  }
 }
