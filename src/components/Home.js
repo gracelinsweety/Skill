@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 
 const Home = () => {
-  const message = "Hello! Welcome to my portfolio"; // Full message to display
+  const message = "WELCOME TO MY PORTFOLIO"; // Full message to display
 
   return (
     <div className="home">
@@ -17,4 +17,3 @@ const Home = () => {
 };
 
 export default Home;
-

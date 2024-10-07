@@ -35,7 +35,6 @@
   font-family: 'Montserrat', sans-serif; /* Professional font style */
   color: #1565c0; /* Dark blue */
   margin-bottom: 15px;
-  border-bottom: 3px solid #64b5f6; /* Blue underline */
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -62,5 +61,3 @@
 .explore-button:hover {
   background-color: #0d47a1; /* Darker blue on hover */
 }
-
-

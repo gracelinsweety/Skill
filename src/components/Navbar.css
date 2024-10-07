@@ -7,14 +7,30 @@
   padding: 10px 20px;
 }
 
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Spreads elements evenly */
+}
+
+/* New container for aligning the logo to the left */
+.logo-container {
+  flex: 1;
+  text-align: left; /* Ensures the logo stays on the left */
+}
+
 .logo {
   font-size: 1.8em;
   color: #fff;
+  margin-left: 10px; /* Add a little spacing */
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 
 .nav-links li {
@@ -37,22 +53,20 @@
 /* Icon Styles */
 .nav-icon {
   margin-right: 8px; /* Space between icon and text */
-  transition: font-size 0.3s ease; /* Smooth size transition */
+  transition: font-size 0.3s ease;
 }
 
 /* Blue Shade for Icons */
 .icon-blue {
-  color: #5f80a3; /* Blue color for icons */
+  color: #5f80a3;
 }
 
-/* Hover Effect for Icons */
 .icon-blue:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3;
 }
 
 /* Responsive Menu Icon Styles */
 .menu-icon {
-  display: none;
   font-size: 28px;
   color: #fff;
   cursor: pointer;
@@ -75,42 +89,39 @@
   }
 
   .nav-links li {
-    margin: 20px 0; /* Space between menu items */
+    margin: 20px 0;
   }
 
   .nav-links a {
-    font-size: 1.4em; /* Larger text for mobile screens */
-  }
-
-  .nav-icon {
-    font-size: 1.6em; /* Increase icon size for larger mobile menu */
+    font-size: 1.4em;
   }
 
   .nav-links.open {
-    right: 0; /* Show the menu */
+    right: 0;
   }
 
   .menu-icon {
-    display: block; /* Show the menu icon */
+    display: block;
   }
 
   .logo {
-    font-size: 1.6em; /* Slightly smaller logo for mobile */
+    font-size: 1.6em;
   }
 }
 
 /* Responsive Styles for Screen Sizes Below 480px */
 @media screen and (max-width: 480px) {
   .logo {
-    font-size: 1.4em; /* Smaller logo size for very small screens */
+    font-size: 1.4em;
+    margin-left: 5px; /* Adjust logo spacing */
   }
 
   .nav-links a {
-    font-size: 1.2em; /* Slightly smaller font size */
+    font-size: 1.2em;
   }
 
   .nav-icon {
-    font-size: 1.4em; /* Adjust icon size for very small screens */
+    font-size: 1.4em;
   }
 
   .nav-links li {
@@ -118,17 +129,23 @@
   }
 
   .menu-icon {
-    font-size: 24px; /* Slightly smaller menu icon */
+    font-size: 24px;
   }
 }
 
 /* General Styles for Desktop and Larger Screens */
 @media screen and (min-width: 1024px) {
+  .nav-links {
+    flex: 1; /* Allows nav-links to occupy more space */
+    justify-content: flex-end;
+  }
+
   .nav-icon {
-    font-size: 1.2em; /* Standard icon size for larger screens */
+    font-size: 1.2em;
   }
 
   .logo {
-    font-size: 2em; /* Larger logo for wide screens */
+    font-size: 2em;
   }
 }
+

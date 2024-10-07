@@ -13,22 +13,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="logo">My Portfolio</h1>
-        
-        {/* Show the menu icon only when the menu is closed */}
-        {!menuOpen && (
-          <div className="menu-icon" onClick={toggleMenu}>
-            <FaBars />
-          </div>
-        )}
-        
-        {/* Show the close icon only when the menu is open */}
-        {menuOpen && (
-          <div className="menu-icon" onClick={toggleMenu}>
-            <FaTimes />
-          </div>
-        )}
-        
+        {/* Logo moved to the left corner */}
+        <div className="logo-container">
+          <h1 className="logo">My Portfolio</h1>
+        </div>
+
+        {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
             <Link to="/" onClick={toggleMenu}>
@@ -56,9 +46,15 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+
+        {/* Menu Icon moved to the right corner */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
       </div>
     </nav>
   );
 }
 
 export default Navbar;
+
